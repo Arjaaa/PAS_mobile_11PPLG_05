@@ -52,21 +52,17 @@ class LoginPage extends GetView<LoginController> {
                     onPressed: controller.login,
                     isLoading: controller.isLoading.value,
                   )),
+              const SizedBox(height: 5),
               const Text(
                 "Don't have an account?",
                 style: TextStyle(color: Colors.grey),
               ),
+              const SizedBox(height: 10),
               Obx(() => CustomButton(
                     text: 'Register',
                     onPressed: ()=> Get.offAllNamed(Approutes.register),
                     isLoading: controller.isLoading.value,
                   )),
-
-              const SizedBox(height: 20),
-              const Text(
-                "Login to your account",
-                style: TextStyle(color: Colors.grey),
-              ),
             ],
           ),
         ),

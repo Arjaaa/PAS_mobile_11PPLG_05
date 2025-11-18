@@ -21,7 +21,7 @@ class RegisterPage extends GetView<RegisterController> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(height: 40),
+              const SizedBox(height: 35),
               const FlutterLogo(size: 100),
               const SizedBox(height: 30),
               const Text(
@@ -83,11 +83,6 @@ class RegisterPage extends GetView<RegisterController> {
                     isLoading: controller.isLoading.value,
                   )),
 
-              const SizedBox(height: 12),
-              TextButton(
-                onPressed: () => Get.to(() => LoginPage()),
-                child: const Text("Sudah punya akun? Login di sini"),
-              ),
               const SizedBox(height: 20),
             ],
           ),
